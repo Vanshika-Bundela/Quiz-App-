@@ -1,3 +1,4 @@
+**WEB DEVELOPMENT QUIZ APP**
 
 A modern and interactive quiz app built with React.js, designed to test your knowledge of web development concepts including HTML, CSS, JavaScript, and more. The app features an aesthetic UI, interactive progress tracking, and instant feedback on answers.
 
@@ -20,16 +21,4 @@ Install dependencies - npm install
 Start the development server - npm start
 Open http://localhost:3000 - to view it in the browser.
 
-**Folder Structure **
-quiz-app/
-│
-├── src/
-│   ├── components/
-│   │   ├── Quiz.js
-│   │   ├── QuestionList.js
-│   │   └── quiz.css
-│   ├── App.js
-│   └── index.js
-│
-├── package.json
-└── README.md
+
