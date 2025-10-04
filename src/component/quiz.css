@@ -1,0 +1,154 @@
+/*  Global Layout  */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ffe1f7, #dee7f7);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+}
+
+/*  Quiz Container  */
+.quiz-container {
+  background: #1e1e2f;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Smooth entry animation */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/*  Progress Bar  */
+.progress-bar {
+  height: 10px;
+  background: #333;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #4cafef, #00c6ff);
+  transition: width 0.4s ease-in-out, background 0.4s ease-in-out;
+}
+
+/* Progress bar result states */
+.progress.good { background: #4caf50; }   /* Green */
+.progress.medium { background: #ff9800; } /* Yellow */
+.progress.bad { background: #f44336; }    /* Red */
+
+/*  Question */
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #f9f9f9;
+}
+
+/* Options  */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #2d2d44;
+  margin: 12px 0;
+  padding: 14px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+li:hover {
+  background: #4c4c6d;
+  transform: scale(1.02);
+}
+
+/* Selected & Feedback */
+.correct {
+  background: #4caf50 !important;
+  color: #fff;
+  border: 2px solid #2e7d32;
+  box-shadow: 0 0 12px rgba(76, 175, 80, 0.7);
+}
+
+.incorrect {
+  background: #f44336 !important;
+  color: #fff;
+  border: 2px solid #b71c1c;
+  box-shadow: 0 0 12px rgba(244, 67, 54, 0.7);
+}
+
+/* Buttons  */
+button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #4cafef;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover:not(:disabled) {
+  background: #3b8ad9;
+  transform: translateY(-2px);
+}
+
+.button-disable {
+  background: #777;
+  cursor: not-allowed;
+}
+
+/* Restart button styling */
+.score-box button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ff9800;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.score-box button:hover {
+  background: #e68900;
+  transform: translateY(-2px);
+}
+
+/* Score Section  */
+.score-box {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffeb3b;
+  background: #222;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
