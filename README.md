@@ -15,10 +15,15 @@ A modern and interactive quiz app built with React.js, designed to test your kno
 **Restart Quiz:** Allows users to restart the quiz anytime.
 
 **Installation**
+
 Clone the repository - git clone <your-repo-link>
+
 Navigate to project directory - cd quiz-app
+
 Install dependencies - npm install
+
 Start the development server - npm start
+
 Open http://localhost:3000 - to view it in the browser.
 
 
